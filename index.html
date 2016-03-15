@@ -16,35 +16,62 @@
         var username = prompt("Welcome to my about me page. What's your name?");
           alert("hello " + username);
         var place = prompt("Where do you live?");
-        if (place == "Portland") {
+        if ((place == "Portland") || (place == "portland")) {
           alert("Me too.");
         }
         else {
           alert("Oh, I live in Portland.");
         };
         alert("Okay, now it's time to play a game. Let's see how well you know me.")
+        var score = 0;
         var animal = prompt("Are sloths one of my favorite animals?")
-        if (animal == "Yes") {
+        if ((animal == "Yes") || (animal == "yes")) {
           alert("You know me too well.");
+          score++;
         }
         else {
           alert("Sounds like you don't know me very well.");
         };
         var colorado = prompt("Did I live in Colorado for five years?")
-        if (colorado == "Yes") {
-          alert("That is correct.")
+        if ((colorado == "Yes") || (colorado == "yes")) {
+          alert("That is correct.");
+          score++;
         }
         else {
           alert("I did live in Colorado for 5 years.");
         };
         var sport = prompt("Is my favorite sport tennis?")
-        if (sport == "Yes") {
+        if ((sport == "Yes") || (sport == "yes")) {
           alert("That's wrong, it's skiing.");
+          score++;
         }
         else {
           alert("You know me all too well.");
         };
         alert("Thanks for playing!");
+
+
+        do {
+        var guess = prompt("Guess the number that I am currenly thinking of. It is beween 1 and 10.")
+        if (guess == 9) {
+          alert("Woa! Mind Reader!");
+          score++;
+        }
+        else if (guess < 9) {
+          alert("Too low! Try again.");
+        }
+        else  {
+          alert("Too high! Guess again.");
+        }
+      } while (guess != 9);
+
+
+
+
+      alert(username + ", the number of questions you got correct is: " + score + ".");
+
+
+
       </script>
   </body>
 </html>
