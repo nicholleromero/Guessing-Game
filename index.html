@@ -4,6 +4,26 @@
     <title> Nicholle </title>
   </head>
   <body>
+    <h1>All About You</h1>
+    <table border="2" width="700">
+      <tr>
+        <th>Name</th>
+        <th id="newUser">New User Here</th>
+      </tr>
+      <tr>
+        <th>Home</th>
+        <th id="homeTown">New User's Home</th>
+      </tr>
+      <tr>
+        <th>Favorite Animal</th>
+        <th id="favAnimal">New User's Favorite Animal</th>
+      </tr>
+      <tr>
+        <th>Favorite Sport</th>
+        <th id="favSport">New User's Favorite Sport</th>
+      </tr>
+    </table>
+
     <h1> All About Nicholle &trade; </h1>
     <p> What I like to do in my free time:
         <ul>
@@ -13,15 +33,20 @@
         </ul>
      </p>
       <script type="text/javascript">
-        var username = prompt("Welcome to my about me page. What's your name?");
-          alert("hello " + username);
-        var place = prompt("Where do you live?");
-        if ((place == "Portland") || (place == "portland")) {
-          alert("Me too.");
-        }
-        else {
-          alert("Oh, I live in Portland.");
-        };
+        var userName = prompt("Welcome to my about me page. What's your name?");
+        var place = prompt("Hello "+userName+", where are you from?");
+        var animal = prompt("What's your favorite animal, "+userName+"?");
+        var sport = prompt("How about your favorite sport?");
+
+        document.getElementById("newUser").innerHTML = userName;
+        document.getElementById("homeTown").innerHTML = place;
+        document.getElementById("favAnimal").innerHTML = animal;
+        document.getElementById("favSport").innerHTML = sport;
+        </script>
+      </body>
+      </html>
+
+        /*
         alert("Okay, now it's time to play a game. Let's see how well you know me.")
         var score = 0;
         var animal = prompt("Are sloths one of my favorite animals?")
