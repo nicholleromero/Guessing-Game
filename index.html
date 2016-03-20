@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Nicholle </title>
+  </head>
+  <body>
+    <h1>All About You</h1>
+    <table border="2" width="700">
+      <tr>
+        <th>Name</th>
+        <th id="newUser">New User Here</th>
+      </tr>
+      <tr>
+        <th>Home</th>
+        <th id="homeTown">New User's Home</th>
+      </tr>
+      <tr>
+        <th>Favorite Animal</th>
+        <th id="favAnimal">New User's Favorite Animal</th>
+      </tr>
+      <tr>
+        <th>Favorite Sport</th>
+        <th id="favSport">New User's Favorite Sport</th>
+      </tr>
+    </table>
+
+    <h1> All About Nicholle &trade; </h1>
+    <p> What I like to do in my free time:
+        <ul>
+          <li>Eat <img src="http://interactive.wxxi.org/files/images/highlights/ice_cream.JPG" width="600" height="450"> </li>
+          <li>Sleep <img src="http://images.clipartpanda.com/baby-20clipart-706105-Baby005.gif" width="600" height="450"></li>
+          <li>Ski <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6alyU9myf6oE0J7Jon8VEkhhj1oUPgTLijocVzkUTE6zJjdj4EQ" width="600" height="450"></li>
+        </ul>
+     </p>
+      <script type="text/javascript">
+        var userName = prompt("Welcome to my about me page. What's your name?");
+        var place = prompt("Hello "+userName+", where are you from?");
+        var animal = prompt("What's your favorite animal, "+userName+"?");
+        var sport = prompt("How about your favorite sport?");
+
+        document.getElementById("newUser").innerHTML = userName;
+        document.getElementById("homeTown").innerHTML = place;
+        document.getElementById("favAnimal").innerHTML = animal;
+        document.getElementById("favSport").innerHTML = sport;
+        </script>
+      </body>
+      </html>
+
+        /*
+        alert("Okay, now it's time to play a game. Let's see how well you know me.")
+        var score = 0;
+        var animal = prompt("Are sloths one of my favorite animals?")
+        if ((animal == "Yes") || (animal == "yes")) {
+          alert("You know me too well.");
+          score++;
+        }
+        else {
+          alert("Sounds like you don't know me very well.");
+        };
+        var colorado = prompt("Did I live in Colorado for five years?")
+        if ((colorado == "Yes") || (colorado == "yes")) {
+          alert("That is correct.");
+          score++;
+        }
+        else {
+          alert("I did live in Colorado for 5 years.");
+        };
+        var sport = prompt("Is my favorite sport tennis?")
+        if ((sport == "Yes") || (sport == "yes")) {
+          alert("That's wrong, it's skiing.");
+          score++;
+        }
+        else {
+          alert("You know me all too well.");
+        };
+        alert("Thanks for playing!");
+
+
+        do {
+        var guess = prompt("Guess the number that I am currenly thinking of. It is beween 1 and 10.")
+        if (guess == 9) {
+          alert("Woa! Mind Reader!");
+          score++;
+        }
+        else if (guess < 9) {
+          alert("Too low! Try again.");
+        }
+        else  {
+          alert("Too high! Guess again.");
+        }
+      } while (guess != 9);
+
+
+
+
+      alert(username + ", the number of questions you got correct is: " + score + ".");
+
+
+
+      </script>
+  </body>
+</html>
